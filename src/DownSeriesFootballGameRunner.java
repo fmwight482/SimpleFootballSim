@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class FootballGameRunner {
+public class DownSeriesFootballGameRunner {
 
 	public static void main(String args[]) throws FootballException {
 		Random rand = new Random();
