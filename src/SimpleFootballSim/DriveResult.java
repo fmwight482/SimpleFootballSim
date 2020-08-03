@@ -1,3 +1,5 @@
+package SimpleFootballSim;
+
 public class DriveResult {
 	public int scores;
 	public int points;

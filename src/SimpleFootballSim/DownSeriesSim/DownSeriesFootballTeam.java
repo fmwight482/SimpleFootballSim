@@ -1,3 +1,7 @@
+package SimpleFootballSim.DownSeriesSim;
+
+import SimpleFootballSim.FourthDownCall;
+
 import java.util.Random;
 
 /**
@@ -152,7 +156,7 @@ public class DownSeriesFootballTeam {
 	/**
 	 * Equals method checks if the names of the two teams are identical.
 	 * @param o object to be compared
-	 * @return true if the given object is a DownSeriesFootballTeam with the same name
+	 * @return true if the given object is a SimpleFootballSim.DownSeriesSim.DownSeriesFootballTeam with the same name
 	 */
 	public boolean equals(Object o) {
 		if (o instanceof DownSeriesFootballTeam) {

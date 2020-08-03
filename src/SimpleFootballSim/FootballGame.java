@@ -1,3 +1,7 @@
+package SimpleFootballSim;
+
+import SimpleFootballSim.DownSeriesSim.DownSeriesFootballTeam;
+
 import java.util.Random;
 
 public class FootballGame {

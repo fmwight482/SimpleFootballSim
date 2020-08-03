@@ -1,3 +1,7 @@
+package SimpleFootballSim.DownSeriesSim;
+
+import SimpleFootballSim.FootballException;
+
 import java.util.Random;
 
 public class DownSeriesFootballGameRunner {
@@ -17,7 +21,7 @@ public class DownSeriesFootballGameRunner {
 		for (int i=1; i<=samples; i++) {
 			double ep = game.getExpectedPoints(i, archers, reps);
 			System.out.print("Expected points value for " + archers + " ball at the " + i + " in " + reps +
-					" attempts is " + ep);
+					" attempts is " + Math.round(ep * 100) / 100);
 			System.out.println();
 		}
 	}

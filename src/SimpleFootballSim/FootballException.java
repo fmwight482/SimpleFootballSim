@@ -1,3 +1,5 @@
+package SimpleFootballSim;
+
 /**
  * Exception thrown for "football problems"
  */
