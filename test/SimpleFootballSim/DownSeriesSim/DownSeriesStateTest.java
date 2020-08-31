@@ -42,9 +42,7 @@ class DownSeriesStateTest {
 	@Test
 	void testInvalidExpectedPoints() {
 		dss.addPoints(3);
-		assertThrows(FootballException.class, () -> {
-			dss.getExpectedPoints();
-		});
+		assertThrows(FootballException.class, () -> dss.getExpectedPoints());
 	}
 
 	@Test

@@ -16,7 +16,7 @@ public class DownSeriesState {
 	private final int yardLine;
 
 	private int counter = 0;
-	private int points = 0;
+	private double points = 0;
 	private double expectedPoints;
 
 	public DownSeriesState(String team, int yardLine) {
@@ -29,12 +29,13 @@ public class DownSeriesState {
 	 * If the counter has reached the reps threshold, calculate an expectedPoints value.
 	 * @param pts net points scored
 	 */
-	public void addPoints(int pts) {
+	public void addPoints(double pts) {
 		counter++;
 		points += pts;
 
 		if (counter >= reps) {
 			expectedPoints = points / (double)counter;
+			//System.out.println("Found final value for " + team + "@" + yardLine + ": " + expectedPoints);
 		}
 	}
 
@@ -76,7 +77,7 @@ public class DownSeriesState {
 	/**
 	 * package-private getter for testing purposes
 	 */
-	int getPoints() {
+	double getPoints() {
 		return points;
 	}
 
